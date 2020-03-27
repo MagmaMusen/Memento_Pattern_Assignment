@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TextEditor.cs" />
+    <Compile Include="PageTextContent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TextSaver.cs" />
   </ItemGroup>
