@@ -28,39 +28,66 @@ namespace Memento_WPF_App
         {
             InitializeComponent();
 
-            KeyDown += MainWindow_KeyCommand;
+            //KeyDown += MainWindow_KeyCommand;
 
             content = new PageTextContent();
             textSaver = new TextSaver((IOriginator)content);
         }
 
-        private void MainWindow_KeyCommand(object sender, KeyEventArgs e)
+        //private void MainWindow_KeyCommand(object sender, KeyEventArgs e)
+        //{
+        //    if (Keyboard.Modifiers == ModifierKeys.Control)
+        //    {
+        //        if (e.Key == Key.U) //Undo
+        //        {
+        //            if (textSaver.HandleUndo())
+        //            {
+        //                var revertedText = content.GetText();
+        //                EditorTxb.Text = revertedText;
+
+        //            }
+
+        //        }
+        //        else if (e.Key == Key.R) //Redo
+        //        {
+        //            if (textSaver.HandleRedo())
+        //            {
+        //                var revertedText = content.GetText();
+        //                EditorTxb.Text = revertedText;
+        //            }
+        //        }
+        //        else if (e.Key == Key.S) //Save
+        //        {
+        //            textSaver.HandleSaveMemento();
+        //        }
+        //    }
+        //}
+
+        private void EditorTxb_OnTextChanged(object sender, TextChangedEventArgs e)
         {
-            if (Keyboard.Modifiers == ModifierKeys.Control)
+            content.SetText(EditorTxb.Text);
+        }
+
+        private void UndoBut_OnClick(object sender, RoutedEventArgs e)
+        {
+            if (textSaver.HandleUndo())
             {
-                if (e.Key == Key.Z) //Undo
-                {
-                    if (textSaver.HandleUndo())
-                    {
-                        var revertedText = content.GetText();
+                EditorTxb.Text = content.GetText();
 
-                    }
-
-                }
-                else if (e.Key == Key.Y) //Redo
-                {
-                    if (textSaver.HandleRedo())
-                    {
-                        var revertedText = content.GetText();
-                        //this.
-                    }
-                }
-                else if (e.Key == Key.S) //Save
-                {
-                    textSaver.HandleSaveMemento();
-                }
             }
         }
 
+        private void RedoBut_OnClick(object sender, RoutedEventArgs e)
+        {
+            if (textSaver.HandleRedo())
+            {
+                EditorTxb.Text = content.GetText();
+            }
+        }
+
+        private void SaveBut_OnClick(object sender, RoutedEventArgs e)
+        {
+            textSaver.HandleSaveMemento();
+        }
     }
 }

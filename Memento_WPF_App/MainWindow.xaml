@@ -12,7 +12,11 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
-        <TextBox Grid.Row="0" Margin="5" />
-
+        <TextBox Name="EditorTxb" Grid.Row="0" Margin="5" AcceptsReturn="True" TextChanged="EditorTxb_OnTextChanged"/>
+        <StackPanel Grid.Row="1" Margin="5" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Name="UndoBut" Margin="10" Padding="10" Click="UndoBut_OnClick">Undo</Button>
+            <Button Name="RedoBut" Margin="10" Padding="10" Click="RedoBut_OnClick">Redo</Button>
+            <Button Name="SaveBut"  Margin="10" Padding="10" Click="SaveBut_OnClick">Save</Button>
+        </StackPanel>
     </Grid>
 </Window>

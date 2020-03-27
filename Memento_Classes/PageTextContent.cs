@@ -10,18 +10,15 @@ namespace Memento_Classes
 {
     public interface IOriginator
     {
-        // Returns a Momento of current state.
+        // Returns a Memento of current state.
         object CreateState();
 
-        // Sets state based on a given Momento.
+        // Sets state based on a given Memento.
         void RestoreState(object state);
     }
 
     public interface IPageContent
     {
-        //void DisplayContent();
-
-        //void AddText(string text);
 
         string GetText();
         void SetText(string text);
@@ -30,7 +27,7 @@ namespace Memento_Classes
 
     public class PageTextContent : IOriginator, IPageContent
     {
-        string _currentText;
+        private string _currentText = "";
 
         // Returns current text in a new TextState object (TextState is a Memento).
         public object CreateState()
@@ -46,21 +43,11 @@ namespace Memento_Classes
             _currentText = ((TextState)state).GetState();
         }
 
-        //public void DisplayContent()
-        //{
-        //    Console.WriteLine(_currentText);
-        //}
-
-        //public void AddText(string text)
-        //{
-        //    _currentText += text;
-        //}
-
+        /* Simulates that the textbox in WPF is this class (Should actually have extended textbox in wpf with the functionality of this class) */
         public string GetText()
         {
             return _currentText;
         }
-
         public void SetText(string text)
         {
             _currentText = text;
@@ -70,7 +57,7 @@ namespace Memento_Classes
 
     internal class TextState
     {
-        // Momento data.
+        // Memento data.
         private string _text;
 
         public string GetState()
@@ -81,6 +68,20 @@ namespace Memento_Classes
         public void SetState(string text)
         {
             _text = text;
-        }        
+        }
+
+        public override bool Equals(Object obj)
+        {
+            //Check for null and compare run-time types.
+            if ((obj == null) || !this.GetType().Equals(obj.GetType()))
+            {
+                return false;
+            }
+            else
+            {
+                TextState t = (TextState)obj;
+                return (_text == t._text);
+            }
+        }
     }
 }
