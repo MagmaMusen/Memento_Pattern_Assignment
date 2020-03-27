@@ -8,8 +8,8 @@ namespace Memento_Classes
 {
     public interface ITextSaver
     {
-        void HandleUndo();
-        void HandleRedo();
+        bool HandleUndo();
+        bool HandleRedo();
         void HandleSaveMemento();
     }
 
@@ -20,14 +20,14 @@ namespace Memento_Classes
         List<object> _undoList;
         List<object> _redoList;
 
-        public TextSaver()
+        public TextSaver(IOriginator originator)
         {
-            _textOriginator = new TextEditor();
+            _textOriginator = originator;
             _undoList = new List<object>();
             _redoList = new List<object>();
         }
 
-        public void HandleUndo()
+        public bool HandleUndo()
         {
             if(_undoList.Count > 0)
             {
@@ -39,10 +39,14 @@ namespace Memento_Classes
                 var mementoToRestore = _undoList.Last();
                 _textOriginator.RestoreState(mementoToRestore);
                 _undoList.Remove(mementoToRestore);
+
+                return true;
             }
+
+            return false;
         }
 
-        public void HandleRedo()
+        public bool HandleRedo()
         {
             if (_redoList.Count > 0)
             {
@@ -54,13 +58,17 @@ namespace Memento_Classes
                 var mementoToRestore = _redoList.Last();
                 _textOriginator.RestoreState(mementoToRestore);
                 _redoList.Remove(mementoToRestore);
+
+                return true;
             }
+
+            return false;
         }
 
         public void HandleSaveMemento()
         {
             // Check : Current state for PageTextContent != the newest saved change
-            if(_textOriginator.CreateState() != _undoList.Last())
+            if(_undoList.Count <= 0 || _textOriginator.CreateState() != _undoList.Last())
             {
                 var newMemento = _textOriginator.CreateState();
                 _undoList.Add(newMemento);

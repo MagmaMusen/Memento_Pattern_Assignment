@@ -8,7 +8,7 @@ using System.Xml;
 
 namespace Memento_Classes
 {
-    internal interface IOriginator
+    public interface IOriginator
     {
         // Returns a Momento of current state.
         object CreateState();
@@ -19,9 +19,13 @@ namespace Memento_Classes
 
     public interface IPageContent
     {
-        void DisplayContent();
+        //void DisplayContent();
 
-        void AddText(string text);
+        //void AddText(string text);
+
+        string GetText();
+        void SetText(string text);
+
     }
 
     public class PageTextContent : IOriginator, IPageContent
@@ -42,15 +46,26 @@ namespace Memento_Classes
             _currentText = ((TextState)state).GetState();
         }
 
-        public void DisplayContent()
+        //public void DisplayContent()
+        //{
+        //    Console.WriteLine(_currentText);
+        //}
+
+        //public void AddText(string text)
+        //{
+        //    _currentText += text;
+        //}
+
+        public string GetText()
         {
-            Console.WriteLine(_currentText);
+            return _currentText;
         }
 
-        public void AddText(string text)
+        public void SetText(string text)
         {
-            _currentText += text;
+            _currentText = text;
         }
+
     }
 
     internal class TextState
