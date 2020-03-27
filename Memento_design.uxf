@@ -4,25 +4,25 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>495</x>
+      <x>531</x>
       <y>279</y>
       <w>216</w>
       <h>117</h>
     </coordinates>
-    <panel_attributes>*TextEditor*
+    <panel_attributes>*PageTextContent*
 -
 - _currentText: string
 -
 + CreateState(): Object
 + RestoreState(state: Object): void
 
-+ // Other text editor functionality</panel_attributes>
++ // Other page content functionality</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>522</x>
+      <x>558</x>
       <y>153</y>
       <w>171</w>
       <h>81</h>
@@ -38,12 +38,13 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>243</x>
+      <x>279</x>
       <y>306</y>
       <w>198</w>
-      <h>63</h>
+      <h>81</h>
     </coordinates>
-    <panel_attributes>*IOriginator*
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+*IOriginator*
 -
 CreateState(): Object
 RestoreState(state: Object): void
@@ -54,7 +55,7 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>432</x>
+      <x>468</x>
       <y>333</y>
       <w>81</w>
       <h>27</h>
@@ -65,7 +66,7 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>180</x>
+      <x>216</x>
       <y>333</y>
       <w>81</w>
       <h>27</h>
@@ -76,7 +77,7 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>594</x>
+      <x>630</x>
       <y>225</y>
       <w>27</w>
       <h>72</h>
@@ -87,7 +88,7 @@ RestoreState(state: Object): void
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>45</x>
+      <x>81</x>
       <y>207</y>
       <w>81</w>
       <h>27</h>
@@ -98,7 +99,7 @@ RestoreState(state: Object): void
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>396</x>
+      <x>432</x>
       <y>108</y>
       <w>81</w>
       <h>27</h>
@@ -109,7 +110,7 @@ RestoreState(state: Object): void
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>378</x>
+      <x>414</x>
       <y>207</y>
       <w>81</w>
       <h>27</h>
@@ -120,7 +121,7 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>450</x>
+      <x>486</x>
       <y>225</y>
       <w>72</w>
       <h>72</h>
@@ -131,7 +132,7 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>117</x>
+      <x>153</x>
       <y>225</y>
       <w>72</w>
       <h>72</h>
@@ -142,7 +143,7 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>468</x>
+      <x>504</x>
       <y>126</y>
       <w>72</w>
       <h>72</h>
@@ -153,7 +154,7 @@ RestoreState(state: Object): void
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
+      <x>36</x>
       <y>279</y>
       <w>189</w>
       <h>117</h>
@@ -172,12 +173,13 @@ RestoreState(state: Object): void
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>459</y>
+      <x>36</x>
+      <y>441</y>
       <w>189</w>
-      <h>81</h>
+      <h>99</h>
     </coordinates>
-    <panel_attributes>*ITextSaver*
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+*ITextSaver*
 -
 + HandleUndo(): void
 + HandleRedo(): void
@@ -187,42 +189,43 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>81</x>
+      <x>117</x>
       <y>387</y>
       <w>27</w>
-      <h>90</h>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>594</x>
+      <x>630</x>
       <y>387</y>
       <w>27</w>
-      <h>90</h>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>495</x>
-      <y>459</y>
+      <x>531</x>
+      <y>441</y>
       <w>216</w>
       <h>81</h>
     </coordinates>
-    <panel_attributes>*ITextEditor*
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+*IPageContent*
 -
-+ // Other text editor functionality</panel_attributes>
++ // Other page content functionality</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>54</x>
+      <x>90</x>
       <y>576</y>
       <w>126</w>
       <h>36</h>
@@ -234,7 +237,7 @@ undo, redo.</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>9</x>
+      <x>45</x>
       <y>531</y>
       <w>63</w>
       <h>63</h>
@@ -245,8 +248,8 @@ undo, redo.</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>567</x>
-      <y>576</y>
+      <x>603</x>
+      <y>558</y>
       <w>126</w>
       <h>36</h>
     </coordinates>
@@ -257,8 +260,8 @@ editor functionality.</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>522</x>
-      <y>531</y>
+      <x>558</x>
+      <y>513</y>
       <w>63</w>
       <h>63</h>
     </coordinates>
