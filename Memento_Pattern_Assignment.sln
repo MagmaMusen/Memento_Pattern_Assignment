@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento_Classes", "Memento_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento_Test_Unit", "Memento_Test_Unit\Memento_Test_Unit.csproj", "{F516D71E-8DEB-4FDC-94E4-E927A37266F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento_App", "Memento_App\Memento_App.csproj", "{FA76BE77-3042-4D17-9DF8-23A75E560804}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F516D71E-8DEB-4FDC-94E4-E927A37266F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F516D71E-8DEB-4FDC-94E4-E927A37266F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F516D71E-8DEB-4FDC-94E4-E927A37266F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA76BE77-3042-4D17-9DF8-23A75E560804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA76BE77-3042-4D17-9DF8-23A75E560804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA76BE77-3042-4D17-9DF8-23A75E560804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA76BE77-3042-4D17-9DF8-23A75E560804}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

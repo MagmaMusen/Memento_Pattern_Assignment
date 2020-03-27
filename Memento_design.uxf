@@ -4,12 +4,12 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>495</x>
-      <y>279</y>
+      <x>990</x>
+      <y>225</y>
       <w>216</w>
       <h>117</h>
     </coordinates>
-    <panel_attributes>*TextEditor*
+    <panel_attributes>*PageTextContent*
 -
 - _currentText: string
 -
@@ -22,8 +22,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>522</x>
-      <y>153</y>
+      <x>1017</x>
+      <y>99</y>
       <w>171</w>
       <h>81</h>
     </coordinates>
@@ -38,8 +38,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>243</x>
-      <y>306</y>
+      <x>738</x>
+      <y>252</y>
       <w>198</w>
       <h>63</h>
     </coordinates>
@@ -54,8 +54,8 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>432</x>
-      <y>333</y>
+      <x>927</x>
+      <y>279</y>
       <w>81</w>
       <h>27</h>
     </coordinates>
@@ -65,8 +65,8 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>180</x>
-      <y>333</y>
+      <x>675</x>
+      <y>279</y>
       <w>81</w>
       <h>27</h>
     </coordinates>
@@ -76,8 +76,8 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>594</x>
-      <y>225</y>
+      <x>1089</x>
+      <y>171</y>
       <w>27</w>
       <h>72</h>
     </coordinates>
@@ -87,8 +87,8 @@ RestoreState(state: Object): void
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>45</x>
-      <y>207</y>
+      <x>540</x>
+      <y>153</y>
       <w>81</w>
       <h>27</h>
     </coordinates>
@@ -98,8 +98,8 @@ RestoreState(state: Object): void
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>396</x>
-      <y>108</y>
+      <x>891</x>
+      <y>54</y>
       <w>81</w>
       <h>27</h>
     </coordinates>
@@ -109,8 +109,8 @@ RestoreState(state: Object): void
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>378</x>
-      <y>207</y>
+      <x>873</x>
+      <y>153</y>
       <w>81</w>
       <h>27</h>
     </coordinates>
@@ -120,8 +120,8 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>450</x>
-      <y>225</y>
+      <x>945</x>
+      <y>171</y>
       <w>72</w>
       <h>72</h>
     </coordinates>
@@ -131,8 +131,8 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>117</x>
-      <y>225</y>
+      <x>612</x>
+      <y>171</y>
       <w>72</w>
       <h>72</h>
     </coordinates>
@@ -142,8 +142,8 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>468</x>
-      <y>126</y>
+      <x>963</x>
+      <y>72</y>
       <w>72</w>
       <h>72</h>
     </coordinates>
@@ -153,8 +153,8 @@ RestoreState(state: Object): void
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>279</y>
+      <x>495</x>
+      <y>225</y>
       <w>189</w>
       <h>117</h>
     </coordinates>
@@ -172,8 +172,8 @@ RestoreState(state: Object): void
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>459</y>
+      <x>495</x>
+      <y>405</y>
       <w>189</w>
       <h>81</h>
     </coordinates>
@@ -187,8 +187,8 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>81</x>
-      <y>387</y>
+      <x>576</x>
+      <y>333</y>
       <w>27</w>
       <h>90</h>
     </coordinates>
@@ -198,8 +198,8 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>594</x>
-      <y>387</y>
+      <x>1089</x>
+      <y>333</y>
       <w>27</w>
       <h>90</h>
     </coordinates>
@@ -209,21 +209,22 @@ RestoreState(state: Object): void
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>495</x>
-      <y>459</y>
-      <w>216</w>
+      <x>990</x>
+      <y>405</y>
+      <w>252</w>
       <h>81</h>
     </coordinates>
-    <panel_attributes>*ITextEditor*
+    <panel_attributes>*IPageTextContent*
 -
-+ // Other text editor functionality</panel_attributes>
++ // Other text editor functionality
++ OnTextChanged(text: string): void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>54</x>
-      <y>576</y>
+      <x>549</x>
+      <y>522</y>
       <w>126</w>
       <h>36</h>
     </coordinates>
@@ -234,8 +235,8 @@ undo, redo.</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>9</x>
-      <y>531</y>
+      <x>504</x>
+      <y>477</y>
       <w>63</w>
       <h>63</h>
     </coordinates>
@@ -245,24 +246,63 @@ undo, redo.</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>567</x>
-      <y>576</y>
-      <w>126</w>
+      <x>1062</x>
+      <y>522</y>
+      <w>216</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>Used for other text
-editor functionality.</panel_attributes>
+    <panel_attributes>Used for handling content-changes</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>522</x>
-      <y>531</y>
+      <x>1017</x>
+      <y>477</y>
       <w>63</w>
       <h>63</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>50.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>765</x>
+      <y>612</y>
+      <w>189</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>*TextEditor*
+--
+- _runnning: bool
+--
++ Start(): void
++ Undo(): void
++ Redo(): void
++ Save(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>675</x>
+      <y>477</y>
+      <w>171</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>882</x>
+      <y>477</y>
+      <w>126</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;150.0</additional_attributes>
   </element>
 </diagram>

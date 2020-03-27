@@ -44,7 +44,7 @@ namespace Memento_Classes
 
         public void HandleRedo()
         {
-            if (_undoList.Count > 0)
+            if (_redoList.Count > 0)
             {
                 // Create new memento from current state and add to redoList
                 var newMemento = _textOriginator.CreateState();
@@ -53,7 +53,7 @@ namespace Memento_Classes
                 // Get newest redo-memento, restore the state and delete from list
                 var mementoToRestore = _redoList.Last();
                 _textOriginator.RestoreState(mementoToRestore);
-                _undoList.Remove(mementoToRestore);
+                _redoList.Remove(mementoToRestore);
             }
         }
 
@@ -64,6 +64,9 @@ namespace Memento_Classes
             {
                 var newMemento = _textOriginator.CreateState();
                 _undoList.Add(newMemento);
+
+                // Clear redoList
+                _redoList.Clear();
             }
         }
     }
