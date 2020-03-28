@@ -60,12 +60,10 @@ namespace Memento_Classes
                 ++_index;
 
                 _historyList.Insert(_index,newMemento);
+
+                while (_historyList.Count - 1 > _index)
+                    _historyList.RemoveAt(_historyList.Count - 1);
             }
-            //Skal enten være i if eller her udenfor - Enten flusher den alt foran uanset hvad, også ved et redo
-            //Eller også sletter den kun foran, hvis det nye man gemmer ikke allerede er det samme som det index
-            //peger på.
-            while (_historyList.Count - 1 > _index)
-                _historyList.RemoveAt(_historyList.Count - 1);
         }
     }
 }
