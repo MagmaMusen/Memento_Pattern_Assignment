@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Memento_Classes
 {
+    /* Interface to caretaker */
     public interface ITextSaver
     {
         void HandleUndo();
@@ -13,12 +14,13 @@ namespace Memento_Classes
         void HandleSaveMemento();
     }
 
+    /* Caretaker */
     public class TextSaver : ITextSaver
     {
         //Fields
-        private List<object> _historyList;
-        private int _index;
-        private IOriginator _textOriginator;
+        private List<object> _historyList;      // List that holds all mementos currently saved
+        private int _index;                     // Current memento index in list
+        private IOriginator _textOriginator;    // Interface to Originator
 
 
         public TextSaver(IOriginator originator)
@@ -27,24 +29,26 @@ namespace Memento_Classes
             _historyList = new List<object>();
             _index = -1;
             
-            HandleSaveMemento(); // Start state
+            HandleSaveMemento(); // Start state (first memento in list = "")
         }
 
         public void HandleUndo()
         {
+            // If we can undo (There are mementos in the list AND current index is on at least second memento in list)
             if (_historyList.Count > 0 && _index-1 >= 0)
             {
                 --_index;
-                _textOriginator.RestoreState(_historyList[_index]);
+                _textOriginator.RestoreState(_historyList[_index]); // UNDO
             }
         }
 
         public void HandleRedo()
         {
+            // If we can redo (current index is less than amount of mementos)
             if (_index < _historyList.Count - 1)
             {
                 ++_index;
-                _textOriginator.RestoreState(_historyList[_index]);
+                _textOriginator.RestoreState(_historyList[_index]); // REDO
             }
         }
 

@@ -18,15 +18,15 @@ namespace Memento_WPF_App
 {
     public partial class MainWindow : Window
     {
-        private IPageTextContent content;
-        private ITextSaver textSaver;
+        private IPageTextContent content; //Interface to originator
+        private ITextSaver textSaver; //Interface to caretaker
 
         public MainWindow()
         {
             InitializeComponent();
 
             content = new PageTextContent();
-            textSaver = new TextSaver((IOriginator)content);
+            textSaver = new TextSaver((IOriginator)content); //textSaver needs reference to same originator as content
         }
 
         // Links EditorTxb to instance "content"
