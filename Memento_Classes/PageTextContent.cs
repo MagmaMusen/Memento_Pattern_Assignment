@@ -19,8 +19,10 @@ namespace Memento_Classes
 
     public interface IPageTextContent
     {
-
+        // Returns current text.
         string GetText();
+
+        // Sets current text.
         void SetText(string text);
 
     }

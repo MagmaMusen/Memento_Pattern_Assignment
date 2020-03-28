@@ -61,8 +61,8 @@ namespace Memento_Classes
 
                 _historyList.Insert(_index,newMemento);
 
-                while(_historyList.Count-1 > _index)
-                    _historyList.RemoveAt(_historyList.Count-1);
+                while (_historyList.Count - 1 > _index)
+                    _historyList.RemoveAt(_historyList.Count - 1);
             }
         }
     }
