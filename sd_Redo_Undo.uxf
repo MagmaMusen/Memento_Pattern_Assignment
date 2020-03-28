@@ -4,8 +4,8 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>468</x>
-      <y>72</y>
+      <x>459</x>
+      <y>117</y>
       <w>90</w>
       <h>45</h>
     </coordinates>
@@ -16,19 +16,19 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>504</x>
-      <y>108</y>
+      <x>495</x>
+      <y>153</y>
       <w>27</w>
-      <h>54</h>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>810</x>
-      <y>72</y>
+      <x>801</x>
+      <y>117</y>
       <w>126</w>
       <h>45</h>
     </coordinates>
@@ -39,31 +39,32 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>864</x>
-      <y>108</y>
+      <x>855</x>
+      <y>198</y>
       <w>27</w>
-      <h>216</h>
+      <h>180</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;220.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1062</x>
-      <y>72</y>
-      <w>90</w>
-      <h>45</h>
+      <x>1035</x>
+      <y>117</y>
+      <w>117</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>&lt;&lt;memento&gt;&gt;
-*TextState*</panel_attributes>
+*TextState*
+_:prevMemento_</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>324</x>
-      <y>126</y>
+      <x>315</x>
+      <y>180</y>
       <w>198</w>
       <h>36</h>
     </coordinates>
@@ -74,8 +75,8 @@ HandleUndo()</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>504</x>
-      <y>144</y>
+      <x>495</x>
+      <y>198</y>
       <w>18</w>
       <h>297</h>
     </coordinates>
@@ -86,21 +87,21 @@ bg=light_gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>513</x>
-      <y>288</y>
+      <x>504</x>
+      <y>342</y>
       <w>369</w>
       <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-RestoreState(memento)
+RestoreState(prevMemento)
 </panel_attributes>
     <additional_attributes>390.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>864</x>
-      <y>306</y>
+      <x>855</x>
+      <y>360</y>
       <w>18</w>
       <h>81</h>
     </coordinates>
@@ -111,8 +112,8 @@ bg=light_gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>873</x>
-      <y>297</y>
+      <x>864</x>
+      <y>351</y>
       <w>243</w>
       <h>36</h>
     </coordinates>
@@ -123,8 +124,8 @@ GetState()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>324</x>
-      <y>423</y>
+      <x>315</x>
+      <y>477</y>
       <w>198</w>
       <h>36</h>
     </coordinates>
@@ -135,10 +136,10 @@ returns</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>333</x>
-      <y>27</y>
-      <w>855</w>
-      <h>828</h>
+      <x>324</x>
+      <y>72</y>
+      <w>1008</w>
+      <h>792</h>
     </coordinates>
     <panel_attributes>*sd*
 HandleUndo / HandleRedo</panel_attributes>
@@ -147,19 +148,19 @@ HandleUndo / HandleRedo</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1098</x>
-      <y>108</y>
+      <x>1089</x>
+      <y>198</y>
       <w>27</w>
-      <h>225</h>
+      <h>189</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;230.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;190.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1098</x>
-      <y>315</y>
+      <x>1089</x>
+      <y>369</y>
       <w>18</w>
       <h>27</h>
     </coordinates>
@@ -170,20 +171,20 @@ bg=light_gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>873</x>
-      <y>324</y>
+      <x>864</x>
+      <y>378</y>
       <w>243</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;..
-_text: string</panel_attributes>
+_text = "ab"</panel_attributes>
     <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>414</x>
-      <y>162</y>
+      <x>405</x>
+      <y>216</y>
       <w>720</w>
       <h>243</h>
     </coordinates>
@@ -195,8 +196,8 @@ _text: string</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>513</x>
-      <y>369</y>
+      <x>504</x>
+      <y>423</y>
       <w>369</w>
       <h>36</h>
     </coordinates>
@@ -207,20 +208,20 @@ returns</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>549</x>
-      <y>234</y>
-      <w>198</w>
+      <x>540</x>
+      <y>288</y>
+      <w>234</w>
       <h>45</h>
     </coordinates>
     <panel_attributes>1. decrement _index
-2. memento = historyList[_index]</panel_attributes>
+2. prevMemento = historyList[_index]</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>513</x>
-      <y>243</y>
+      <x>504</x>
+      <y>297</y>
       <w>54</w>
       <h>27</h>
     </coordinates>
@@ -230,19 +231,19 @@ returns</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>909</x>
-      <y>360</y>
+      <x>900</x>
+      <y>414</y>
       <w>144</w>
       <h>27</h>
     </coordinates>
-    <panel_attributes>_currentText = _text</panel_attributes>
+    <panel_attributes>_currentText = "ab"</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>873</x>
-      <y>360</y>
+      <x>864</x>
+      <y>414</y>
       <w>54</w>
       <h>27</h>
     </coordinates>
@@ -252,8 +253,8 @@ returns</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>504</x>
-      <y>432</y>
+      <x>495</x>
+      <y>486</y>
       <w>27</w>
       <h>72</h>
     </coordinates>
@@ -263,8 +264,8 @@ returns</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>324</x>
-      <y>468</y>
+      <x>315</x>
+      <y>522</y>
       <w>198</w>
       <h>36</h>
     </coordinates>
@@ -275,8 +276,8 @@ HandleRedo()</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>504</x>
-      <y>486</y>
+      <x>495</x>
+      <y>540</y>
       <w>18</w>
       <h>297</h>
     </coordinates>
@@ -287,21 +288,21 @@ bg=light_gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>513</x>
-      <y>630</y>
+      <x>504</x>
+      <y>684</y>
       <w>369</w>
       <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-RestoreState(memento)
+RestoreState(nextMemento)
 </panel_attributes>
     <additional_attributes>390.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>864</x>
-      <y>648</y>
+      <x>855</x>
+      <y>702</y>
       <w>18</w>
       <h>81</h>
     </coordinates>
@@ -312,20 +313,20 @@ bg=light_gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>873</x>
-      <y>639</y>
-      <w>243</w>
+      <x>864</x>
+      <y>693</y>
+      <w>369</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 GetState()</panel_attributes>
-    <additional_attributes>250.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>390.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>324</x>
-      <y>765</y>
+      <x>315</x>
+      <y>819</y>
       <w>198</w>
       <h>36</h>
     </coordinates>
@@ -336,8 +337,8 @@ returns</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1098</x>
-      <y>657</y>
+      <x>1215</x>
+      <y>711</y>
       <w>18</w>
       <h>27</h>
     </coordinates>
@@ -348,21 +349,21 @@ bg=light_gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>873</x>
-      <y>666</y>
-      <w>243</w>
+      <x>864</x>
+      <y>720</y>
+      <w>369</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;..
-_text: string</panel_attributes>
-    <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
+_text = "abc"</panel_attributes>
+    <additional_attributes>10.0;20.0;390.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>414</x>
-      <y>504</y>
-      <w>720</w>
+      <x>405</x>
+      <y>558</y>
+      <w>846</w>
       <h>243</h>
     </coordinates>
     <panel_attributes>optional
@@ -373,8 +374,8 @@ _text: string</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>513</x>
-      <y>711</y>
+      <x>504</x>
+      <y>765</y>
       <w>369</w>
       <h>36</h>
     </coordinates>
@@ -385,20 +386,20 @@ returns</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>549</x>
-      <y>576</y>
-      <w>198</w>
+      <x>540</x>
+      <y>630</y>
+      <w>225</w>
       <h>45</h>
     </coordinates>
     <panel_attributes>1. increment _index
-2. memento = historyList[_index]</panel_attributes>
+2. nextMemento = historyList[_index]</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>513</x>
-      <y>585</y>
+      <x>504</x>
+      <y>639</y>
       <w>54</w>
       <h>27</h>
     </coordinates>
@@ -408,23 +409,146 @@ returns</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>909</x>
-      <y>702</y>
+      <x>900</x>
+      <y>756</y>
       <w>144</w>
       <h>27</h>
     </coordinates>
-    <panel_attributes>_currentText = _text</panel_attributes>
+    <panel_attributes>_currentText = "abc"</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>873</x>
-      <y>702</y>
+      <x>864</x>
+      <y>756</y>
       <w>54</w>
       <h>27</h>
     </coordinates>
     <panel_attributes>lt=..</panel_attributes>
     <additional_attributes>10.0;10.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1089</x>
+      <y>387</y>
+      <w>27</w>
+      <h>495</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;530.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1170</x>
+      <y>117</y>
+      <w>117</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;memento&gt;&gt;
+*TextState*
+_:nextMemento_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1215</x>
+      <y>198</y>
+      <w>27</w>
+      <h>531</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;570.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1044</x>
+      <y>180</y>
+      <w>108</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>_text = "ab"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1170</x>
+      <y>180</y>
+      <w>108</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>_text = "abc"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>801</x>
+      <y>180</y>
+      <w>135</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>_currentText = "abc"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>855</x>
+      <y>153</y>
+      <w>27</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1089</x>
+      <y>162</y>
+      <w>27</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1215</x>
+      <y>162</y>
+      <w>27</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1215</x>
+      <y>729</y>
+      <w>27</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>855</x>
+      <y>432</y>
+      <w>27</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;300.0</additional_attributes>
   </element>
 </diagram>
