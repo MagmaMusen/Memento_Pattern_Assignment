@@ -17,7 +17,7 @@ namespace Memento_Classes
         void RestoreState(object state);
     }
 
-    public interface IPageContent
+    public interface IPageTextContent
     {
 
         string GetText();
@@ -25,7 +25,7 @@ namespace Memento_Classes
 
     }
 
-    public class PageTextContent : IOriginator, IPageContent
+    public class PageTextContent : IOriginator, IPageTextContent
     {
         private string _currentText = "";
 

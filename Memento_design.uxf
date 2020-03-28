@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>531</x>
-      <y>279</y>
+      <x>846</x>
+      <y>423</y>
       <w>216</w>
       <h>117</h>
     </coordinates>
@@ -16,14 +16,15 @@
 + CreateState(): Object
 + RestoreState(state: Object): void
 
-+ // Other page content functionality</panel_attributes>
++ GetText(): string
++ SetText(text: string): void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>558</x>
-      <y>153</y>
+      <x>873</x>
+      <y>306</y>
       <w>171</w>
       <h>81</h>
     </coordinates>
@@ -38,8 +39,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>279</x>
-      <y>306</y>
+      <x>594</x>
+      <y>441</y>
       <w>198</w>
       <h>81</h>
     </coordinates>
@@ -55,8 +56,8 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>468</x>
-      <y>333</y>
+      <x>783</x>
+      <y>477</y>
       <w>81</w>
       <h>27</h>
     </coordinates>
@@ -66,8 +67,8 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>216</x>
-      <y>333</y>
+      <x>531</x>
+      <y>468</y>
       <w>81</w>
       <h>27</h>
     </coordinates>
@@ -77,19 +78,19 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>225</y>
+      <x>945</x>
+      <y>378</y>
       <w>27</w>
-      <h>72</h>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>81</x>
-      <y>207</y>
+      <x>396</x>
+      <y>342</y>
       <w>81</w>
       <h>27</h>
     </coordinates>
@@ -99,8 +100,8 @@ RestoreState(state: Object): void
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>432</x>
-      <y>108</y>
+      <x>774</x>
+      <y>288</y>
       <w>81</w>
       <h>27</h>
     </coordinates>
@@ -110,8 +111,8 @@ RestoreState(state: Object): void
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>414</x>
-      <y>207</y>
+      <x>729</x>
+      <y>360</y>
       <w>81</w>
       <h>27</h>
     </coordinates>
@@ -121,8 +122,19 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>486</x>
-      <y>225</y>
+      <x>801</x>
+      <y>378</y>
+      <w>72</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>60.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>468</x>
+      <y>360</y>
       <w>72</w>
       <h>72</h>
     </coordinates>
@@ -132,38 +144,27 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>153</x>
-      <y>225</y>
-      <w>72</w>
-      <h>72</h>
+      <x>846</x>
+      <y>306</y>
+      <w>45</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>60.0;60.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>504</x>
-      <y>126</y>
-      <w>72</w>
-      <h>72</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>60.0;60.0;10.0;10.0</additional_attributes>
+    <additional_attributes>30.0;30.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>36</x>
-      <y>279</y>
+      <x>351</x>
+      <y>414</y>
       <w>189</w>
-      <h>117</h>
+      <h>126</h>
     </coordinates>
     <panel_attributes>*TextSaver*
 -
 - _textOriginator: IOriginator
-- _undoList: List&lt;Object&gt;
-- _redoList: List&lt;Object&gt; 
+- _historyList: List&lt;Object&gt;
+- _index: int
 -
 + HandleUndo(): void
 + HandleRedo(): void
@@ -173,8 +174,8 @@ RestoreState(state: Object): void
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>36</x>
-      <y>441</y>
+      <x>351</x>
+      <y>594</y>
       <w>189</w>
       <h>99</h>
     </coordinates>
@@ -189,44 +190,45 @@ RestoreState(state: Object): void
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>117</x>
-      <y>387</y>
+      <x>432</x>
+      <y>531</y>
       <w>27</w>
-      <h>72</h>
+      <h>81</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>387</y>
+      <x>945</x>
+      <y>531</y>
       <w>27</w>
-      <h>72</h>
+      <h>81</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>531</x>
-      <y>441</y>
+      <x>846</x>
+      <y>594</y>
       <w>216</w>
-      <h>81</h>
+      <h>99</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
-*IPageContent*
+*IPageTextContent*
 -
-+ // Other page content functionality</panel_attributes>
++ GetText(): string
++ SetText(text: string): void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>90</x>
-      <y>576</y>
+      <x>576</x>
+      <y>648</y>
       <w>126</w>
       <h>36</h>
     </coordinates>
@@ -237,35 +239,82 @@ undo, redo.</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>45</x>
-      <y>531</y>
+      <x>531</x>
+      <y>630</y>
       <w>63</w>
-      <h>63</h>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>50.0;50.0;10.0;10.0</additional_attributes>
+    <additional_attributes>50.0;20.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1053</x>
+      <y>630</y>
+      <w>63</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>50.0;30.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>603</x>
-      <y>558</y>
-      <w>126</w>
+      <x>1098</x>
+      <y>657</y>
+      <w>162</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>Used for other text
-editor functionality.</panel_attributes>
+    <panel_attributes>Used by program to link 
+to PageTextContent</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1053</x>
+      <y>252</y>
+      <w>153</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>*&lt;&lt;override&gt;&gt;*
+Equals(obj: Object): bool</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>558</x>
-      <y>513</y>
-      <w>63</w>
-      <h>63</h>
+      <x>1035</x>
+      <y>288</y>
+      <w>36</w>
+      <h>36</h>
     </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>50.0;50.0;10.0;10.0</additional_attributes>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;20.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>324</x>
+      <y>198</y>
+      <w>900</w>
+      <h>369</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Inner functionality&gt;&gt;
+*Memento-pattern*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>297</x>
+      <y>144</y>
+      <w>981</w>
+      <h>576</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;class library&gt;&gt;
+*Memento_Classes*</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
