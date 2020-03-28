@@ -8,98 +8,61 @@ namespace Memento_Classes
 {
     public interface ITextSaver
     {
-        bool HandleUndo();
-        bool HandleRedo();
+        void HandleUndo();
+        void HandleRedo();
         void HandleSaveMemento();
     }
 
     public class TextSaver : ITextSaver
     {
         //Fields
+        private List<object> _historyList;
+        private int _index;
         private IOriginator _textOriginator;
-        private List<object> _undoList;
-        private object currentMemento;
-        private List<object> _redoList;
+
 
         public TextSaver(IOriginator originator)
         {
             _textOriginator = originator;
-            _undoList = new List<object>();
-            _redoList = new List<object>();
+            _historyList = new List<object>();
+            _index = -1;
+            
             HandleSaveMemento(); // Start state
         }
 
-        public bool HandleUndo()
+        public void HandleUndo()
         {
-            if(_undoList.Count > 0)
+            if (_historyList.Count > 0 && _index-1 >= 0)
             {
-                // Create new memento from current state and add to redoList
-                var newMemento = _textOriginator.CreateState();
-
-                // equals --> Update current memento and delete from list
-                if (currentMemento.Equals(newMemento))
-                {
-                    currentMemento = _undoList.Last();
-                    _undoList.Remove(currentMemento);
-                }
-                else
-                {
-                    _redoList.Clear();
-                }
-
-                _redoList.Add(newMemento);
-
-                // restore the state
-                _textOriginator.RestoreState(currentMemento);
-
-                return true;
+                --_index;
+                _textOriginator.RestoreState(_historyList[_index]);
             }
-
-            return false;
         }
 
-        public bool HandleRedo()
+        public void HandleRedo()
         {
-            if (_redoList.Count > 0)
+            if (_index < _historyList.Count - 1)
             {
-                // Create new memento from current state and add to redoList
-                var newMemento = _textOriginator.CreateState();
-
-                // if equals --> Redo
-                if (currentMemento.Equals(newMemento))
-                {
-                    // Add newMemento
-                    _undoList.Add(newMemento);
-
-                    // Set current to last redo-memento and remove
-                    currentMemento = _redoList.Last();
-                    _redoList.Remove(currentMemento);
-
-                    // Restore state for current
-                    _textOriginator.RestoreState(currentMemento);
-
-                    return true;
-
-                }
+                ++_index;
+                _textOriginator.RestoreState(_historyList[_index]);
             }
-            
-            return false;
         }
 
         public void HandleSaveMemento()
         {
             var newMemento = _textOriginator.CreateState();
 
-            // Check : Current state for PageTextContent != the newest saved change
-            if (_undoList.Count <= 0 || !(newMemento.Equals(_undoList.Last())))
+            // First check is for when the constructor calls this function to add white space "" as first "save"
+            // Second check is to make sure we don't make duplicate saves (index is never less than 0 after
+            // this function is called in the constructor)
+            if (_historyList.Count <= 0 || !(newMemento.Equals(_historyList[_index])))
             {
-                if(currentMemento != null)
-                    _undoList.Add(currentMemento);
+                ++_index;
 
-                currentMemento = newMemento;
+                _historyList.Insert(_index,newMemento);
 
-                // Clear redoList
-                _redoList.Clear();
+                while(_historyList.Count-1 > _index)
+                    _historyList.RemoveAt(_historyList.Count-1);
             }
         }
     }

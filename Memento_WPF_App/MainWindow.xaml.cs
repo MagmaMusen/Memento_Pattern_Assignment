@@ -70,19 +70,14 @@ namespace Memento_WPF_App
 
         private void UndoBut_OnClick(object sender, RoutedEventArgs e)
         {
-            if (textSaver.HandleUndo())
-            {
-                EditorTxb.Text = content.GetText();
-
-            }
+            textSaver.HandleUndo();
+            EditorTxb.Text = content.GetText();
         }
 
         private void RedoBut_OnClick(object sender, RoutedEventArgs e)
         {
-            if (textSaver.HandleRedo())
-            {
-                EditorTxb.Text = content.GetText();
-            }
+            textSaver.HandleRedo();
+            EditorTxb.Text = content.GetText();
         }
 
         private void SaveBut_OnClick(object sender, RoutedEventArgs e)
