@@ -67,6 +67,7 @@ namespace Memento_Classes
 
                 while (_historyList.Count - 1 > _index)
                     _historyList.RemoveAt(_historyList.Count - 1);
+
             }
         }
     }
