@@ -90,14 +90,14 @@ hvilke tilstande skal der genoprettes.</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>590</x>
+      <x>560</x>
       <y>160</y>
-      <w>210</w>
+      <w>240</w>
       <h>60</h>
     </coordinates>
     <panel_attributes>*Memento*
 PageTextContent's tilstand kan
-indkaplses som nyt objekt.</panel_attributes>
+indkaplses som nyt memento-objekt.</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -112,7 +112,7 @@ indkaplses som nyt objekt.</panel_attributes>
 Er i en teksttilstand og kan gemme
 sin tilstand i et memento-objekt.
 Kan også genoprette sin tilstand ud
-gra et memento-objekt. </panel_attributes>
+fra et memento-objekt. </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
