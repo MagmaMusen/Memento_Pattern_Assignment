@@ -62,7 +62,7 @@ namespace Memento_Classes
             if (_historyList.Count <= 0 || !(newMemento.Equals(_historyList[_index])))
             {
                 ++_index;
-
+                
                 _historyList.Insert(_index,newMemento);
 
                 while (_historyList.Count - 1 > _index)
