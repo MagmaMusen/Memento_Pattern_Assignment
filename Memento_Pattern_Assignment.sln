@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento_Classes", "Memento_Classes\Memento_Classes.csproj", "{A135668B-76C1-4325-81A7-C93B1DE32DE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento_Test_Unit", "Memento_Test_Unit\Memento_Test_Unit.csproj", "{F516D71E-8DEB-4FDC-94E4-E927A37266F6}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento_WPF_App", "Memento_WPF_App\Memento_WPF_App.csproj", "{653E9967-B311-4484-9319-CF1AAECAB805}"
 EndProject
 Global
@@ -19,10 +17,6 @@ Global
 		{A135668B-76C1-4325-81A7-C93B1DE32DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A135668B-76C1-4325-81A7-C93B1DE32DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A135668B-76C1-4325-81A7-C93B1DE32DE9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F516D71E-8DEB-4FDC-94E4-E927A37266F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F516D71E-8DEB-4FDC-94E4-E927A37266F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F516D71E-8DEB-4FDC-94E4-E927A37266F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F516D71E-8DEB-4FDC-94E4-E927A37266F6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{653E9967-B311-4484-9319-CF1AAECAB805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{653E9967-B311-4484-9319-CF1AAECAB805}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{653E9967-B311-4484-9319-CF1AAECAB805}.Release|Any CPU.ActiveCfg = Release|Any CPU
